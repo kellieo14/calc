@@ -14,20 +14,29 @@
     <div class="modal fade" id="textModal">
       <div class="modal-dialog">
         <div class="modal-content">
-
+        
+        
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h3 class="modal-title">Please Take Our Survey!</h3>
           </div>
           <div class="modal-body">
+            <div id="myhidden">
+                <div class="jumbotron">
+                  <h1>Thank You for taking our survey!</h1> 
+
+                </div>
+                <button id="close" class="submit btn btn-info pull-right" data-dismiss="modal">Close!</button>
+            </div>
+            <div id="showing">
             <form class="form">
               <div class="form-group">
                 <label for="mobilePhone">Name</label>
-                <input type="text" class="form-control" id="Name" placeholder="Name">
+                <input type="text" class="form-control" id="name" placeholder="Name">
               </div>
               <div class="form-group">
                 <label for="mobilePhone">Date of Birth</label>
-                <input type="date" class="form-control" id="Name" placeholder="Date Of Birth">
+                <input type="date" class="form-control" id="dob" placeholder="Date Of Birth">
               </div>
                <div class="form-group">
                <label for="mobilePhone">Gender</label>
@@ -133,13 +142,14 @@
               </div>
               <div class="form-group">
                 <label for="mobilePhone">Favorite Color:</label>
-                <input type="color" class="form-control" id="Name">
+                <input type="color" class="form-control input-lg" id="color">
               </div>
-              <button type="submit" class="btn btn-info pull-right" data-dismiss="modal">Submit!</button>
+              <button id="submit" class="btn btn-info pull-right">Submit!</button>
             </form>
           </div>
 
         </div>
+      </div>
       </div>
     </div>
     <!-- End Modal -->
@@ -175,8 +185,7 @@
     <ol reversed="true">
     </ol>
 
-  </div>
-  
+  </div> 
 
   </body>
   <script src="js/bootstrap.js"></script>

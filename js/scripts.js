@@ -77,7 +77,20 @@ $(function(event){
 	});
 	$("button#clear").click(function(event){
 		$("ol").remove();
+		event.preventDefault();
 
 	});
-	
+	$("button#submit").click(function(event){
+		$("#showing").toggle();
+		$("#myhidden").fadeToggle();
+		$(".form-group").children('input').val('')
+		event.preventDefault();
+
+	});
+	$("button#close").click(function(event){
+		$("#showing").fadeToggle();
+		$("#myhidden").toggle();
+		event.preventDefault();
+
+	});
 });
