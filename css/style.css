@@ -4,6 +4,7 @@ li{
 }
 .jumbotron{
 	text-align: center;
+	padding: 6em;
 }
 .btn-primary{
 	padding: .5em;
@@ -26,4 +27,33 @@ label{
 .form-control{
 	font-size: 2em;
 	padding: 1em 0.5em 1em 0.5em;
+}
+.btn-success{
+	padding: .5em;
+	font-size: 1.8em;
+	margin:0em 2em 0em 0em;
+}
+.btn-info{
+	padding: .5em;
+	font-size: 1.8em;
+}
+select{
+	font-size: 2em;
+	padding: 2em 0.5em 2em 0.5em;
+}
+.radio{
+	padding-left: 1.5em;
+}
+#radioheader{
+	padding-left: .5em;
+}
+.modal-dialog{
+	min-width: 60%;
+}
+.close{
+	font-size: 3em;
+}
+.modal-title{
+	font-size: 3em;
+	text-align: center;
 }

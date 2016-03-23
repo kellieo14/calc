@@ -2,19 +2,154 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"> -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.2.js"></script>
     <script src="js/scripts.js"></script>
-    <link rel="icon" 
-      type="image/ico" 
-      href="img/Calculator.ico">
+    <link rel="icon" type="image/ico" href="img/Calculator.ico">
     <title>Calculator</title>
   </head>
   <body>
+    <!-- Modal -->
+    <div class="modal fade" id="textModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title">Please Take Our Survey!</h3>
+          </div>
+          <div class="modal-body">
+            <form class="form">
+              <div class="form-group">
+                <label for="mobilePhone">Name</label>
+                <input type="text" class="form-control" id="Name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="mobilePhone">Date of Birth</label>
+                <input type="date" class="form-control" id="Name" placeholder="Date Of Birth">
+              </div>
+               <div class="form-group">
+               <label for="mobilePhone">Gender</label>
+                <select class="form-control">
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+              <div class="form-group">
+              <label for="mobilePhone">What class are you in?</label>
+                <div class="row">
+                
+                  <div class="col-md-6">
+                    
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="chocolate" checked>
+                        Intro To Programming
+                      </label>
+                      </div>
+                      <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="vanilla">
+                        Intro To Programming(night)
+                      </label>
+                      </div>
+                       <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="vanilla">
+                        CSS
+                      </label>
+                      </div>
+                       <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="vanilla">
+                        JavaScript
+                      </label>
+                      </div>
+                       <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="vanilla">
+                        Java
+                      </label>
+                      </div>
+                       <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="vanilla">
+                        C#
+                      </label>
+                      </div>
+                       <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="vanilla">
+                        PHP
+                      </label>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="cookiesandcream">
+                        Ruby
+                      </label>
+                      </div>
+                       <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="vanilla">
+                        Android
+                      </label>
+                      </div>
+                       <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="vanilla">
+                        Design
+                      </label>
+                      </div>
+                       <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="vanilla">
+                        .NET
+                      </label>
+                      </div>
+                       <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="vanilla">
+                        Drupal
+                      </label>
+                      </div>
+                       <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="vanilla">
+                        Rails
+                      </label>
+                      </div>
+                       <div class="radio">
+                      <label>
+                        <input type="radio" name="flavor" value="vanilla">
+                        Intership and Job Search
+                      </label>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="mobilePhone">Favorite Color:</label>
+                <input type="color" class="form-control" id="Name">
+              </div>
+              <button type="submit" class="btn btn-info pull-right" data-dismiss="modal">Submit!</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
   <div class="jumbotron">
+
   	<h1>Calculator</h1>
+    <button  class="btn btn-lg btn-success pull-right" data-toggle="modal" href="#textModal" >Take Our Survey</button>
   </div>
   <div class="container">
+
   	<form id="form">
       <div class="width">
     		<div class="form-group">
@@ -39,7 +174,10 @@
     <h1>Answer History:</h1>
     <ol reversed="true">
     </ol>
+
   </div>
+  
 
   </body>
+  <script src="js/bootstrap.js"></script>
  </html>

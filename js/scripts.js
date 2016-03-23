@@ -30,7 +30,8 @@ $(function(event){
 		var num1 = parseFloat($("#num1").val());
     	var num2 = parseFloat($("#num2").val());
 		var answer = add(num1,num2);
-		$("ol").prepend("<li>"+num1+" + "+num2+" = "+answer+"</li>");
+		var history = "<li>"+num1+" + "+num2+" = "+answer+"</li>";
+		$("ol").prepend(history);
 		event.preventDefault();
 
 	});
