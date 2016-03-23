@@ -1,0 +1,11 @@
+li{
+	font-size: 2vmin;
+	padding-left: 2em;
+}
+.jumbotron{
+	text-align: center;
+}
+.btn{
+	padding: 1em;
+	margin: .5em;
+}
